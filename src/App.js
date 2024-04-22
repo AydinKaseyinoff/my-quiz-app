@@ -5,18 +5,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Login from './components/LoginPage';
 import Register from './components/SignupPage';
-import Profile from './components/Profile';
 import MillionaireGame from './components/MillionaireGame';
 import KahootGame from './components/KahootGame';
 import './App.css';
+import Profile from './components/Profile';
 
 const App = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem('user');
+    const loggedInUser = JSON.parse(localStorage.getItem('user'));
     if (loggedInUser) {
-      setUser(JSON.parse(loggedInUser));
+      setUser(loggedInUser);
     }
   }, []);
 
@@ -71,10 +71,7 @@ const App = () => {
         </nav>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route
-            path="/login"
-            element={<Login handleLogin={handleLogin} />}
-          />
+          <Route path="/login" element={<Login handleLogin={handleLogin} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile user={user} />} />
           <Route path="/millionaire" element={<MillionaireGame />} />
