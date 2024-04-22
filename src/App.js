@@ -78,6 +78,10 @@ const App = () => {
           <Route path="/kahoot" element={<KahootGame />} />
         </Routes>
       </div>
+      <audio autoPlay loop>
+        <source src="/background-music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </Router>
   );
 };
