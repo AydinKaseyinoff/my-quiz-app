@@ -1,0 +1,117 @@
+/* src/components/HomePage.css */
+
+.home-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .home-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .home-page p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .home-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home-page li {
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .home-page li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .answer-correct {
+    color: green;
+  }
+  
+  .answer-wrong {
+    color: red;
+  }
+  
+  .continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .continue-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* src/pages/Login.css */
+  
+  .auth-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .auth-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .auth-page .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .auth-page label {
+    display: block;
+    font-size: 18px;
+  }
+  
+  .auth-page input[type='text'],
+  .auth-page input[type='email'],
+  .auth-page input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .auth-page button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-page button:hover {
+    background-color: #0056b3;
+  }
+  
